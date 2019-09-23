@@ -1,0 +1,12 @@
+{
+    "languages": {
+        "he": {
+            "Home": "בית",
+            "Products": "מוצרים",
+            "Cart": "עגלה",
+            "About": "אודות",
+            "Add product": "הוסף מוצר",
+            "Contact": "יצירת קשר"
+        }
+    }
+}

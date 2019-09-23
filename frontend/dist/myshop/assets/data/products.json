@@ -1,0 +1,90 @@
+[
+    {
+        "id": 0,
+        "categoryId": "1",
+        "imgUrl": "../../assets/img/pc.jpg",
+        "title": "PC1",
+        "price": 200,
+        "description": "i7 8GB"
+    },
+    {
+        "id": 1,
+        "categoryId": "1",
+        "imgUrl": "../../assets/img/pc.jpg",
+        "title": "PC1",
+        "price": 200,
+        "description": "i7 8GB"
+    },
+    {
+        "id": 2,
+        "categoryId": "1",
+        "imgUrl": "../../assets/img/pc.jpg",
+        "title": "PC1",
+        "price": 200,
+        "description": "i7 8GB"
+    },
+    {
+        "id": 3,
+        "categoryId": "2",
+        "imgUrl": "../../assets/img/gpu.jpg",
+        "title": "GPU",
+        "price": 200,
+        "description": "i7 8GB"
+    },
+    {
+        "id": 4,
+        "categoryId": "2",
+        "imgUrl": "../../assets/img/gpu.jpg",
+        "title": "GPU",
+        "price": 200,
+        "description": "i7 8GB"
+    },
+    {
+        "id": 5,
+        "categoryId": "2",
+        "imgUrl": "../../assets/img/gpu.jpg",
+        "title": "GPU",
+        "price": 200,
+        "description": "i7 8GB"
+    },
+    {
+        "id": 6,
+        "categoryId": "3",
+        "imgUrl": "../../assets/img/monitor.jpg",
+        "title": "monitor",
+        "price": 200,
+        "description": "i7 8GB"
+    },
+    {
+        "id": 7,
+        "categoryId": "3",
+        "imgUrl": "../../assets/img/monitor.jpg",
+        "title": "monitor",
+        "price": 200,
+        "description": "i7 8GB"
+    },
+    {
+        "id": 8,
+        "categoryId": "3",
+        "imgUrl": "../../assets/img/monitor.jpg",
+        "title": "monitor",
+        "price": 200,
+        "description": "i7 8GB"
+    },
+    {
+        "id": 9,
+        "categoryId": "3",
+        "imgUrl": "../../assets/img/monitor.jpg",
+        "title": "monitor",
+        "price": 200,
+        "description": "i7 8GB"
+    },
+    {
+        "id": 10,
+        "categoryId": "3",
+        "imgUrl": "../../assets/img/monitor.jpg",
+        "title": "monitor",
+        "price": 200,
+        "description": "i7 8GB"
+    }
+]
