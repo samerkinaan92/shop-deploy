@@ -9,7 +9,6 @@ const User_1 = require("../models/User");
 const Product_1 = require("../models/Product");
 const cartValidation_1 = require("../validations/cartValidation");
 const joi_1 = __importDefault(require("joi"));
-const mongoose_1 = __importDefault(require("mongoose"));
 const router = express_1.Router();
 exports.router = router;
 router.get('/:username', check_auth_1.checkAuth, (req, res, next) => {
@@ -21,14 +20,23 @@ router.get('/:username', check_auth_1.checkAuth, (req, res, next) => {
         .select('cart')
         .exec()
         .then(doc => {
-        const ids = doc.cart.map(cartItem => mongoose_1.default.Types.ObjectId(cartItem.productId));
+        const ids = doc.cart.map(cartItem => cartItem.productId);
         Product_1.Product.find({
             '_id': { $in: ids }
         })
             .select('_id categoryId imgUrl title price description')
             .exec()
             .then(docs => {
-            res.status(200).send(docs);
+            const cart = docs.map((product) => {
+                const foundItem = doc.cart
+                    .find(item => {
+                    return item.productId.toString() === product._id.toString();
+                });
+                if (foundItem) {
+                    return { product, quantity: foundItem.quantity };
+                }
+            });
+            res.status(200).send(cart);
         });
     })
         .catch(err => {
